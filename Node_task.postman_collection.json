@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "ee189c12-82a3-43cf-91e5-6cb0fc436150",
+		"name": "Node_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26970823"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "hello",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "hello@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "654321",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "hello",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "654321",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "789456",
+							"type": "text"
+						},
+						{
+							"key": "confirmPassword",
+							"value": "789456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/user/find/hello@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"find",
+						"hello@gmail.com"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
